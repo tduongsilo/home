@@ -1,0 +1,19 @@
+[user]
+	name = tduong
+	email = tduong@sciencelogic.com
+[branch]
+	autosetuprebase = always
+[push]
+	default = simple
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	unstage = reset HEAD --
+	visual = !gitk
+	last = log -1 HEAD
+[filter "lfs"]
+	smudge = git-lfs smudge %f
+	required = true
+	clean = git-lfs clean %f
