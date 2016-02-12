@@ -5,8 +5,8 @@ do
 	fswatch $G3_BASE -1
     rsync -oprtlvessh --progress --exclude=*.swp --exclude=.svn $G3_BASE/gui/ap/* $AOSCP/gui/ap/
     rsync -oprtlvessh --progress --exclude=*.swp --exclude=.svn $G3_BASE/gui/is/* $AOSCP/gui/is/
-	rsync -oprtlvessh --progress --exclude=*.swp --exclude=.svn $G3_BASE/phpshare/* $AOSCP/phpshare/
-	rsync -oprtlvessh --progress --exclude=*.swp --exclude=.svn $G3_BASE/backend/* $AOSCP/proc/
+		rsync -oprtlvessh --progress --exclude=*.swp --exclude=.svn $G3_BASE/phpshare/* $AOSCP/phpshare/
+		rsync -oprtlvessh --progress --exclude=*.swp --exclude=.svn $G3_BASE/backend/* $AOSCP/proc/
 	echo -en "\007"
 	echo -en "\007"
 	echo -en "\007"
